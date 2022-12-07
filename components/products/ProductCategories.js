@@ -1,16 +1,14 @@
 import React from "react";
 
-export default function ProductCategories() {
-  const categories = ["WRLDS", "AVC", "MRTN GRX", "SNHL"];
-
+export default function ProductCategories({ products }) {
   return (
     <div className="container">
       <div className="categories">
         <div className="category__item-wrapper">
-          {categories.map((category, index) => {
+          {products.map((product, index) => {
             return (
               <div className="category__item" key={index}>
-                {category}
+                {product.frontmatter.name}
               </div>
             );
           })}

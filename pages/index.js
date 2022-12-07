@@ -29,7 +29,7 @@ export default function Home({ products }) {
       </header>
 
       <main className="section is--products">
-        <ProductCategories />
+        <ProductCategories products={products} />
 
         <ProductGrid products={products} />
       </main>
