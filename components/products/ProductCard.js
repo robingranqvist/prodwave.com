@@ -1,5 +1,6 @@
 import React from "react";
 
-export default function ProductCard({ product }) {
-  return <div className="product">{product}</div>;
+export default function ProductCard({ frontmatter }) {
+  console.log(frontmatter);
+  return <div className="product">{frontmatter.title}</div>;
 }

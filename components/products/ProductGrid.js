@@ -1,13 +1,11 @@
 import ProductCard from "./ProductCard";
 
-export default function ProductGrid() {
-  const products = ["WRLDS", "AVC", "MRTN GRX", "SNHL"];
-
+export default function ProductGrid({ products }) {
   return (
     <div className="container">
       <div className="product__grid">
-        {products.map((product, index) => {
-          return <ProductCard product={product} key={index} />;
+        {products.map(({ frontmatter, slug }) => {
+          return <ProductCard frontmatter={frontmatter} slug={slug} />;
         })}
       </div>
     </div>

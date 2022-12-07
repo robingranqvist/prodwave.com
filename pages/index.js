@@ -1,3 +1,5 @@
+import fs from "fs";
+import matter from "gray-matter";
 import Image from "next/image";
 
 import {
@@ -9,7 +11,7 @@ import {
   Footer,
 } from "@/components/index";
 
-export default function Home() {
+export default function Home({ products }) {
   return (
     <>
       <header className="section is--hero">
@@ -29,10 +31,32 @@ export default function Home() {
       <main className="section is--products">
         <ProductCategories />
 
-        <ProductGrid />
+        <ProductGrid products={products} />
       </main>
 
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const files = fs.readdirSync("content/products");
+
+  const products = files.map((file) => {
+    const slug = file.replace(".md", "");
+    const readFile = fs.readFileSync(`content/products/${file}`, "utf-8");
+
+    const { data: frontmatter } = matter(readFile);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      products,
+    },
+  };
 }

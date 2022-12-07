@@ -1,6 +1,5 @@
 ---
 title: AVC - 58 Avicii Inspired Presets for Xfer Serum
-slug: avc
 video: https://www.youtube.com/watch?v=rIYLAOnP_vU
 price: 5
 gumroad__url: https://prodwave.gumroad.com/l/wpNZf
