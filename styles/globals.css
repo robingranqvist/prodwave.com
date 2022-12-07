@@ -1,9 +1,26 @@
-html,
+@font-face {
+  font-family: "Archivo Regular";
+  src: url("../assets/fonts/Archivo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Archivo Medium";
+  src: url("../assets/fonts/Archivo-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Archivo Semibold";
+  src: url("../assets/fonts/Archivo-SemiBold.ttf");
+}
+
+:root {
+  --color-background: #f2f2f2;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--color-background);
+  font-family: "Archivo Regular", sans-serif;
+  font-size: 18px;
 }
 
 a {
@@ -13,14 +30,139 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/* Type */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: "Archivo Medium", sans-serif;
+  letter-spacing: -2px;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+.subheader {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Archivo Medium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Global */
+.section {
+  padding: 8rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section.is--hero {
+  padding: 3rem 0rem;
+  gap: 8rem;
+}
+
+.section.is--products {
+  padding-top: 3rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0rem 3rem;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Title / content */
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 70ch;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.category__item-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.category__item {
+  font-family: "Archivo Medium", sans-serif;
+}
+
+/* Product */
+.product__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.product {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 40rem;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-radius: 1rem;
+  background-color: #000;
+  color: #f2f2f2;
+}
+
+.footer {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
 }
