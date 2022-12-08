@@ -15,6 +15,7 @@
 
 :root {
   --color-background: #f2f2f2;
+  --transition: all 0.45s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 body {
@@ -158,6 +159,10 @@ h6 {
   color: #f2f2f2;
 }
 
+.product:hover .product__image {
+  transform: scale(1.05);
+}
+
 .product__image-wrapper {
   position: absolute;
 
@@ -173,10 +178,73 @@ h6 {
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: var(--transition);
 }
 
 .product__content {
   z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.product__cta {
+  max-width: 47ch;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product__cta h2 {
+  font-size: 2.25rem;
+}
+
+.product__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.product__button {
+  border: 1px solid #f2f2f2;
+  border-radius: 0.25rem;
+  background: none;
+  color: #f2f2f2;
+  padding: 1rem 1.5rem;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Archivo Medium", sans-serif;
+}
+
+.product__line {
+  width: 1px;
+  height: 1rem;
+  background-color: #f2f2f2;
+}
+
+.product__listen {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.product__listen a {
+  margin-bottom: -0.15rem;
+}
+
+.product__info p {
+  margin-bottom: -0.15rem;
 }
 
 .footer {

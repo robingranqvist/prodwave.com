@@ -1,11 +1,23 @@
 ---
-title: Bundle
+title: The Bundle
+title__page: 195 Artist Inspired Presets for Xfer Serum
 name: Bundle
 video: https://www.youtube.com/watch?v=skOdE9OD3yI
-price: 4
+price: 12.5
 gumroad__url: https://prodwave.gumroad.com/l/xnIRd
-image__thumbnail: "/images/packs/img__the-bundle--background.jpg"
+# image__thumbnail: "/images/packs/img__the-bundle--background.jpg"
 image__featured:
 serum__version: 1.214
 order: 5
+total__presets: 195
+leads: 72
+basses: 57
+synths: 39
+plucks: 4
+fx: 4
+arps: 12
+pads: 4
+file__size: 169
 ---
+
+This is a bundle of our 4 serum preset packs inspired by your favorite producer. It consists of 195 presets in total, inspired by Porter Robinson, Avicii, Martin Garrix and San Holo.

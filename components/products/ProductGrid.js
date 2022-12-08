@@ -5,7 +5,13 @@ export default function ProductGrid({ products }) {
     <div className="container">
       <div className="product__grid">
         {products.map(({ frontmatter, slug }) => {
-          return <ProductCard frontmatter={frontmatter} slug={slug} />;
+          return (
+            <ProductCard
+              frontmatter={frontmatter}
+              slug={slug}
+              key={frontmatter.order}
+            />
+          );
         })}
       </div>
     </div>

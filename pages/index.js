@@ -1,6 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
-import Image from "next/image";
+import Script from "next/script";
 
 import {
   PageHead,
@@ -35,6 +35,8 @@ export default function Home({ products }) {
       </main>
 
       <Footer />
+
+      <Script src="https://gumroad.com/js/gumroad.js" />
     </>
   );
 }
@@ -54,9 +56,13 @@ export async function getStaticProps() {
     };
   });
 
+  const orderedProducts = products.sort(
+    (a, b) => a.frontmatter.order - b.frontmatter.order
+  );
+
   return {
     props: {
-      products,
+      products: orderedProducts,
     },
   };
 }
