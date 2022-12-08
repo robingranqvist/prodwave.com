@@ -228,6 +228,13 @@ h6 {
   padding: 1rem 1.5rem;
   font-size: inherit;
   cursor: pointer;
+  transition: var(--transition);
+}
+
+.product__button:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
 }
 
 .product__info {
@@ -346,6 +353,12 @@ h6 {
 .product__button.is--dark {
   border: 1px solid #000;
   color: #000;
+}
+
+.product__button.is--dark:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
 }
 
 .product__grid--small {

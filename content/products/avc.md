@@ -6,7 +6,7 @@ video: https://www.youtube.com/watch?v=rIYLAOnP_vU
 price: 5
 gumroad__url: https://prodwave.gumroad.com/l/wpNZf
 image__thumbnail: "/images/packs/img__avc--background.svg"
-image__featured:
+image__featured: "/images/packs/img__avc--full-background.svg"
 serum__version: 1.214
 order: 2
 total__presets: 58

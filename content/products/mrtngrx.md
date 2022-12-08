@@ -6,7 +6,7 @@ video: https://www.youtube.com/watch?v=sDFGAM75uVA
 price: 5
 gumroad__url: https://prodwave.gumroad.com/l/PLTns
 image__thumbnail: "/images/packs/img__mrtn--background.svg"
-image__featured:
+image__featured: "/images/packs/img__mrtn--full-background.svg"
 serum__version: 1.214
 order: 3
 total__presets: 48
