@@ -2,14 +2,13 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import {
-  PageHead,
-  Nav,
-  Hero,
-  ProductCategories,
-  ProductGrid,
-  Footer,
-} from "@/components/index";
+import ProductFullPageImage from "@/components/products/ProductFullPageImage";
+import ProductParagraph from "@/components/products/ProductParagraph";
+import ProductVideo from "@/components/products/ProductVideo";
+import ProductInfoTable from "@/components/products/ProductInfoTable";
+import ProductCta from "@/components/products/ProductCta";
+
+import { PageHead, Nav, Hero, Footer } from "@/components/index";
 
 export default function Product({
   frontmatter: {
@@ -23,6 +22,17 @@ export default function Product({
     image__featured,
     serum__version,
     order,
+    description,
+    video__embed,
+    total__presets,
+    leads,
+    basses,
+    synths,
+    plucks,
+    arps,
+    fx,
+    pads,
+    file__size,
   },
   content,
   slug,
@@ -37,52 +47,29 @@ export default function Product({
 
         <Nav />
 
-        <Hero heading={title__page} subheading={name} />
-
-        <main className="section is--products">
-          <div className="container__large">
-            <div className="image__fullpage"></div>
-          </div>
-
-          <div className="container">
-            <div className="content__center">
-              <div className="content__center--inner">
-                <p className="subheader">The presets</p>
-                <p className="product__paragraph"></p>
-              </div>
-            </div>
-          </div>
-
-          <div className="container">
-            <div className="product__video"></div>
-          </div>
-
-          <div className="container">
-            <div className="content__center">
-              <div className="content__center--inner">
-                <div className="product__table">
-                  <div className="product__row"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="container">
-            <div className="content__center">
-              <div className="content__center--inner">
-                <div className="product__cta--page">
-                  <h2>
-                    Skip your next coffee and get this soundbank for only $
-                    {price}
-                  </h2>
-
-                  <a className="product__button">Buy Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
+        <Hero heading={title__page} subheading={name} page="slug" />
       </header>
+
+      <main className="section is--products">
+        <ProductFullPageImage image={image__featured} />
+        <ProductParagraph description={description} />
+        <ProductVideo video={video__embed} />
+        <ProductInfoTable
+          total__presets={total__presets}
+          leads={leads}
+          basses={basses}
+          synths={synths}
+          plucks={plucks}
+          arps={arps}
+          fx={fx}
+          pads={pads}
+          serum__version={serum__version}
+          file__size={file__size}
+        />
+        <ProductCta price={price} gumroad__url={gumroad__url} />
+      </main>
+
+      <Footer />
     </>
   );
 }

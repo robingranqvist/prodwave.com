@@ -5,7 +5,7 @@ name: Bundle
 video: https://www.youtube.com/watch?v=skOdE9OD3yI
 price: 12.5
 gumroad__url: https://prodwave.gumroad.com/l/xnIRd
-# image__thumbnail: "/images/packs/img__the-bundle--background.jpg"
+image__thumbnail: "/images/packs/img__bundle--background-min.png"
 image__featured:
 serum__version: 1.214
 order: 5
@@ -18,6 +18,5 @@ fx: 4
 arps: 12
 pads: 4
 file__size: 169
+description: This is a bundle of our 4 serum preset packs inspired by your favorite producer. It consists of 195 presets in total, inspired by Porter Robinson, Avicii, Martin Garrix and San Holo.
 ---
-
-This is a bundle of our 4 serum preset packs inspired by your favorite producer. It consists of 195 presets in total, inspired by Porter Robinson, Avicii, Martin Garrix and San Holo.

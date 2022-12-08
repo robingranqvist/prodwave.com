@@ -5,7 +5,7 @@ export default function PageHead({ title, description }) {
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon__prodwave.svg" />
     </Head>
   );
 }

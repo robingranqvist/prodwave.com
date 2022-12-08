@@ -5,18 +5,22 @@ export default function ProductCategories({ products }) {
     <div className="container">
       <div className="categories">
         <div className="category__item-wrapper">
-          {products.map((product, index) => {
+          {products.map(({ frontmatter, slug }) => {
             return (
-              <div className="category__item" key={index}>
-                {product.frontmatter.name}
-              </div>
+              <a
+                className="category__item"
+                key={slug}
+                href={`/product/${slug}`}
+              >
+                {frontmatter.name}
+              </a>
             );
           })}
         </div>
 
-        <div className="category__item">
+        <a className="category__item" href="/product/bundle">
           All preset packs for $12.5 (Limited)
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import fs from "fs";
 import matter from "gray-matter";
-import Script from "next/script";
 
 import {
   PageHead,
@@ -35,8 +34,6 @@ export default function Home({ products }) {
       </main>
 
       <Footer />
-
-      <Script src="https://gumroad.com/js/gumroad.js" />
     </>
   );
 }
