@@ -42,7 +42,12 @@ export default function Product({
 
         <Nav />
 
-        <Hero heading={title__page} subheading={name} page="slug" />
+        <Hero
+          heading={title__page}
+          subheading={name}
+          gumroad__url={gumroad__url}
+          page="slug"
+        />
       </header>
 
       <main className="section is--products is--slug">

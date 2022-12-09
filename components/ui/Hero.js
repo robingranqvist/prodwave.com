@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Hero({ heading, subheading, page, buyButton, buyUrl }) {
+export default function Hero({ heading, subheading, page, gumroad__url }) {
   return (
     <div className="container">
       <div className="hero">
@@ -17,7 +17,9 @@ export default function Hero({ heading, subheading, page, buyButton, buyUrl }) {
         </div>
 
         {page === "slug" ? (
-          <a className="product__button is--dark">Buy Now</a>
+          <a className="product__button is--dark" href={gumroad__url}>
+            Buy Now
+          </a>
         ) : null}
       </div>
     </div>

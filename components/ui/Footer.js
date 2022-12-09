@@ -6,11 +6,14 @@ export default function Footer() {
       <footer className="footer">
         <div className="footer__item">
           Check out Prodwave on{" "}
-          <Link href="#" target="_blank">
+          <Link href="https://medium.com/prodwave" target="_blank">
             Medium
           </Link>{" "}
           and{" "}
-          <Link href="#" target="_blank">
+          <Link
+            href="https://www.youtube.com/channel/UCuaSf2yeFwkcTAkBFc_wJQA"
+            target="_blank"
+          >
             YouTube
           </Link>
         </div>
