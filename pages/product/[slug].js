@@ -15,13 +15,10 @@ export default function Product({
     title,
     title__page,
     name,
-    video,
     price,
     gumroad__url,
-    image__thumbnail,
     image__featured,
     serum__version,
-    order,
     description,
     video__embed,
     total__presets,
@@ -34,8 +31,6 @@ export default function Product({
     pads,
     file__size,
   },
-  content,
-  slug,
 }) {
   return (
     <>
@@ -50,7 +45,7 @@ export default function Product({
         <Hero heading={title__page} subheading={name} page="slug" />
       </header>
 
-      <main className="section is--products">
+      <main className="section is--products is--slug">
         <ProductFullPageImage image={image__featured} />
         <ProductParagraph description={description} />
         <ProductVideo video={video__embed} />

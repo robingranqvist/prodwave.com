@@ -25,7 +25,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: blue;
   text-decoration: none;
 }
 
@@ -93,8 +93,11 @@ h6 {
 }
 
 .section.is--products {
-  gap: 8rem;
   padding-top: 3rem;
+}
+
+.is--slug {
+  gap: 8rem;
 }
 
 .container {
@@ -148,6 +151,7 @@ h6 {
 
 .category__item {
   font-family: "Archivo Medium", sans-serif;
+  color: #000;
 }
 
 /* Product */
@@ -251,11 +255,19 @@ h6 {
   background-color: #f2f2f2;
 }
 
+.product__link {
+  color: #fff;
+}
+
 .product__listen {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
   align-items: center;
+}
+
+.product__listen a {
+  color: #fff;
 }
 
 .product__listen a {
@@ -383,5 +395,110 @@ h6 {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
+  .categories {
+    flex-direction: column;
+  }
+  .product__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .product {
+    padding: 2rem;
+  }
+
+  .container {
+    padding: 0rem 2rem;
+  }
+
+  .category__item-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .section.is--hero {
+    gap: 6rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .container__large {
+    padding: 0rem 1.5rem;
+  }
+
+  .image__fullpage {
+    height: 25rem;
+  }
+
+  .is--slug {
+    gap: 6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 16px;
+  }
+
+  .product__info {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .product__line {
+    display: none;
+  }
+
+  .product {
+    padding: 1.5rem;
+    height: 30rem;
+  }
+
+  .container {
+    padding: 0rem 1.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero__content h1 {
+    font-size: 2.5rem;
+  }
+
+  .section.is--hero {
+    gap: 4rem;
+  }
+
+  .is--slug {
+    gap: 4rem;
+  }
+
+  .section.is--products {
+    padding-top: 0rem;
+  }
+
+  .section {
+    padding: 4rem 0rem;
+  }
+
+  .product__cta h2 {
+    font-size: 1.75rem;
+  }
+
+  .product__cta--page {
+    padding: 4rem;
+  }
+
+  .product__cta--page h2,
+  .product__paragraph {
+    font-size: 1.5rem;
+  }
 }

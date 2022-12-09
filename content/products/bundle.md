@@ -1,5 +1,5 @@
 ---
-title: The Bundle
+title: The Bundle - 195 Artist Inspired Presets for Xfer Serum
 title__page: 195 Artist Inspired Presets for Xfer Serum
 name: Bundle
 video: https://www.youtube.com/watch?v=skOdE9OD3yI
