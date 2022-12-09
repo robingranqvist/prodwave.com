@@ -18,4 +18,5 @@ arps: 2
 pads: 2
 file__size: 211
 description: This soundbank is inspired by one of the biggest EDM stars; Martin Garrix. It features presets that will help you achieve the perfect mainroom sound in your next productions.
+video__embed: https://www.youtube.com/embed/sDFGAM75uVA
 ---

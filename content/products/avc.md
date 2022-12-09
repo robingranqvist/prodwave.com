@@ -17,4 +17,5 @@ fx: 2
 arps: 1
 file__size: 247
 description: This preset pack is inspired by the one and only Avicii. It features presets inspired by a variety of selected tracks from his whole discography.
+video__embed: https://www.youtube.com/embed/rIYLAOnP_vU
 ---

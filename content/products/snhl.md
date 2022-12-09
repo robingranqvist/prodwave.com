@@ -18,4 +18,5 @@ arps: 2
 pads: 2
 file__size: 211
 description: This preset pack is inspired by the amazing producer San Holo and his Future Bass esque productions. It features sounds inspired by selected tracks from his whole discography.
+video__embed: https://www.youtube.com/embed/skOdE9OD3yI
 ---

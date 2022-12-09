@@ -47,8 +47,11 @@ export default function Product({
 
       <main className="section is--products is--slug">
         <ProductFullPageImage image={image__featured} />
+
         <ProductParagraph description={description} />
-        <ProductVideo video={video__embed} />
+
+        {video__embed && <ProductVideo video={video__embed} />}
+
         <ProductInfoTable
           total__presets={total__presets}
           leads={leads}
@@ -61,6 +64,7 @@ export default function Product({
           serum__version={serum__version}
           file__size={file__size}
         />
+
         <ProductCta price={price} gumroad__url={gumroad__url} />
       </main>
 
