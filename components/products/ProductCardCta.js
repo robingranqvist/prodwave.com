@@ -7,7 +7,7 @@ export default function ProductCardCta({ frontmatter, slug }) {
 
       <div className="product__buttons">
         <Link className="product__button" href={frontmatter.gumroad__url}>
-          Buy now
+          Buy now - ${frontmatter.price}
         </Link>
         <Link className="product__link" href={`/product/${slug}`}>
           More info
