@@ -1,9 +1,6 @@
-import Tag from "../ui/tag";
-
 export default function ProductCardImage({ frontmatter }) {
   return (
     <div className="product__image-wrapper">
-      <Tag text={frontmatter.price} />
       <div
         className="product__image"
         style={{
