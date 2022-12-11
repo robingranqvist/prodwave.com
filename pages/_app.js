@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import Script from "next/script";
 
 import "../styles/globals.css";
 
@@ -28,7 +27,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Script src="https://gumroad.com/js/gumroad.js" />
       <Component {...pageProps} />
     </>
   );

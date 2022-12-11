@@ -35,10 +35,7 @@ export default function Product({
   return (
     <>
       <header className="section is--hero">
-        <PageHead
-          title={"Prodwave - " + title}
-          description="Quality Xfer Serum preset packs for $5 or less"
-        />
+        <PageHead title={"Prodwave - " + title} description={description} />
 
         <Nav />
 

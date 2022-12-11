@@ -8,7 +8,10 @@ export default function Hero({ heading, subheading, page, gumroad__url }) {
           <p className="subheader">
             {page === "slug" && (
               <>
-                <Link href="/">Home</Link> /{" "}
+                <Link href="/" className="hero__link">
+                  Home
+                </Link>{" "}
+                /{" "}
               </>
             )}
             {subheading}
